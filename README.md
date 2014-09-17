@@ -10,18 +10,24 @@ This is not a microlibrary, so I'll implement a lot of basic data structure, it 
 
 It is a simple linked list with reference to first element.
 
-Creating a new list:
+Creating a new list _O(1)_:
 
-    List * list = list_new();
+```c
+List * list = list_new();
+```
 
-Checking list emptiness:
+Checking list emptiness _O(1)_:
 
-    List * list = list_new();
-    list_is_empty(list); // => 1
+```c
+List * list = list_new();
+list_is_empty(list); // => 1
+```
 
-Prepending elements to the list
+Prepending elements to the list _O(1)_:
 
-    List * list = list_new();
-    void * data; //Inilialize it at somepoint
-    list_prepend(list, data);
-    liss_is_empty(list); // => 0
+```c
+List * list = list_new();
+void * data; //Inilialize it at somepoint
+list_prepend(list, data);
+liss_is_empty(list); // => 0
+```
