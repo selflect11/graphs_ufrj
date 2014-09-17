@@ -19,15 +19,27 @@ List * list = list_new();
 Checking list emptiness _O(1)_:
 
 ```c
-List * list = list_new();
 list_is_empty(list); // => 1
 ```
 
 Prepending elements to the list _O(1)_:
 
 ```c
-List * list = list_new();
 void * data; //Inilialize it at somepoint
 list_prepend(list, data);
 liss_is_empty(list); // => 0
 ```
+
+Get the first element of the list (the head) _O(1)_:
+```c
+list_first(list) // => data
+```
+
+Get the the nth element _O(n)_:
+
+```c
+list_prepend(list, another_data);
+list_prepend(list, first_data);
+list_get(list,1); // => another_data
+```
+
